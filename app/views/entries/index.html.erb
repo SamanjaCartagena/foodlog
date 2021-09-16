@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Meal type</th>
+      <th>Calories</th>
+      <th>Proteins</th>
+      <th>Carbohydrates</th>
+      <th>Fats</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.meal_type %></td>
+        <td><%= entry.calories %></td>
+        <td><%= entry.proteins %></td>
+        <td><%= entry.carbohydrates %></td>
+        <td><%= entry.fats %></td>
+        <td><%= link_to 'Show', entry %></td>
+        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_entry_path %>
