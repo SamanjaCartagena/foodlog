@@ -1,5 +1,5 @@
 <% content_for :title do %>
-  FoodLog &ndash; <%= DateTime.now %>
+<%= @entry.meal_type  %> &ndash; <%= DateTime.now.to_s(:nice_date) %>
   <% end %>
 <p>
   <strong>Meal type:</strong>

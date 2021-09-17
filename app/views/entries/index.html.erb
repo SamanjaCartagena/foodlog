@@ -1,6 +1,6 @@
 
 <% content_for :title do %>
-  FoodLog &ndash; <%= DateTime.now %>
+  FoodLog &ndash; <%= DateTime.now.to_s(:nice_date) %>
   <% end %>
   
 <div class="columns mt-6 is-centered">
