@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
-
+<% content_for :title do %>
+  FoodLog &ndash; <%= DateTime.now %>
+  <% end %>
 <p>
   <strong>Meal type:</strong>
   <%= @entry.meal_type %>
