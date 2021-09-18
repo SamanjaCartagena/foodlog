@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class EntriesTest < ApplicationSystemTestCase
   setup do
-    @entry = entries(:one)
+    @entry = entries(:breakfast)
   end
 
   test "visiting the index" do
