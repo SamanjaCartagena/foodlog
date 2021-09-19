@@ -31,6 +31,7 @@
     <%= form.number_field :proteins, class:"input" %>
   </div>
 
+  
   <div class="field">
     <%= form.label :carbohydrates, class:"label" %>
     <%= form.number_field :carbohydrates, class:"input" %>
@@ -40,7 +41,13 @@
     <%= form.label :fats, class:"label" %>
     <%= form.number_field :fats, class:"input" %>
   </div>
-
+  <div class="field">
+    <%= form.label :category, class:"label" %>
+    <div class="select">
+    <%= form.select :category_id,  Category.all.collect {|u| [u.title,u.id]} %>
+  </div>
+  </div>
+  
   <div class="actions">
     <%= form.submit class:"button is-success" %>
   </div>

@@ -1,6 +1,7 @@
 <% content_for :title do %>
 <%= @entry.meal_type  %> &ndash; <%= DateTime.now.to_s(:nice_date) %>
-  <% end %>
+
+<% end %>
 
 
   <%= %>
@@ -11,7 +12,8 @@
 
   <p class="panel-heading">
   Meal type:
-  <%= @entry.meal_type %>
+  <%= @entry.meal_type %> :<%= @entry.category.title if @entry.category.present? %>  
+
 </p>
 
 <div class="panel-block">
