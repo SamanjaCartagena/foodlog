@@ -1,24 +1,7 @@
 # README
+This works perfectly well and all codes are working. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here is a link of the demo
+https://www.youtube.com/watch?v=ZPWA217p5U4&t=2s
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![foodlog](https://user-images.githubusercontent.com/70960407/135003919-88a05c03-b61a-4c64-8125-1f56428dfba6.PNG)
